@@ -2,4 +2,4 @@
 
 ## Scientific Computing with Python
 
-![image](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+![image](https://github.com/Ventura94/FreeCodeCamp_Proyects_for_Certificactions/blob/master/certifications/scientific_computing_with_python.png?raw=true)

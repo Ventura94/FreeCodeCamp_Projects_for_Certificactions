@@ -27,7 +27,6 @@ def arithmetic_arranger(problems, with_result=False):
         if len(arithmetic[0]) > 4 or len(arithmetic[2]) > 4:
             return "Error: Numbers cannot be more than four digits."
 
-
         if problem["operator"] == "+":
             problem["result"] = sum(problem["first_number"], problem["second_number"])
 
@@ -38,7 +37,6 @@ def arithmetic_arranger(problems, with_result=False):
             return "Error: Operator must be '+' or '-'."
 
         problems_dicts.append(problem)
-
 
     for pd in problems_dicts:
         len_first_number = len(str(pd["first_number"]))
@@ -59,7 +57,8 @@ def arithmetic_arranger(problems, with_result=False):
 
         if len_first_number >= len_second_number:
             spaces = (len_first_number - len_second_number) * " "
-            arranged_problems = arranged_problems + str(pd["operator"]) + " " + spaces + str(pd["second_number"]) + "    "
+            arranged_problems = arranged_problems + str(pd["operator"]) + " " + spaces + str(
+                pd["second_number"]) + "    "
 
         elif len_first_number < len_second_number:
             arranged_problems = arranged_problems + str(pd["operator"]) + " " + str(pd["second_number"]) + "    "
